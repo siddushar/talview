@@ -1,0 +1,35 @@
+<div style="text-align:center">
+  <h3>
+    wel-come to webcam
+  </h3>
+  <div class="row col-md-12">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <webcam [height]="400" [width]="400" [trigger]="triggerObservable" (imageCapture)="handleImage($event)" *ngIf="showWebcam"
+            [allowCameraSwitch]="allowCameraSwitch" [switchCamera]="nextWebcamObservable"
+            [videoOptions]="videoOptions"
+            [imageQuality]="1"
+            (cameraSwitched)="cameraWasSwitched($event)"
+            (initError)="handleInitError($event)"
+            ></webcam>
+            <br/>
+            <button class="actionBtn" (click)="captureImage();">Capture</button>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+  
+</div>
+
+<div class="snapshot" *ngIf="webcamImage">
+    <div class="row col-md-12">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+                <h2>Preview</h2>
+                <img  style="width:100%" [src]="webcamImage.imageAsDataUrl"/>
+                <button class="actionBtn" (click)="commitImageToRepo();">Commit</button>
+
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+  
+</div>

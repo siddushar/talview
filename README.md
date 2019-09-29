@@ -1,6 +1,9 @@
 # Talview
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.4.
+This uses Git Basic Auth to sign-in. this app used to list repos for logged in user and files for selected repo.
+
+Unfortunately commiting new file to git using this application is partially implemeted.
 
 ## Development server
 
@@ -15,7 +18,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
 ## Running unit tests
-
+#currently there are no unit test cases.
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
 ## Running end-to-end tests

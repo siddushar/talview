@@ -1,0 +1,11 @@
+span.repoName {
+    padding: 15px;
+    cursor:pointer;
+    color:blue;
+    text-decoration:underline;
+}
+
+span.repoName:hover {
+    text-decoration:none;
+    text-shadow: 1px 1px 1px #555;
+}
