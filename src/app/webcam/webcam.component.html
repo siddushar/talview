@@ -13,7 +13,7 @@
             (initError)="handleInitError($event)"
             ></webcam>
             <br/>
-            <button class="actionBtn" (click)="captureImage();">Capture</button>
+            <button class="btn btn-primary" (click)="captureImage();">Capture</button>
         </div>
         <div class="col-md-4"></div>
     </div>
@@ -26,7 +26,7 @@
         <div class="col-md-4">
                 <h2>Preview</h2>
                 <img  style="width:100%" [src]="webcamImage.imageAsDataUrl"/>
-                <button class="actionBtn" (click)="commitImageToRepo();">Commit</button>
+                <button class="btn btn-primary" (click)="commitImageToRepo();">Commit</button>
 
         </div>
         <div class="col-md-4"></div>
